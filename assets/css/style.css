@@ -33,6 +33,7 @@ body{
     /* border: solid; */
     margin: 0 auto;
     padding-top: 28pt;
+    font-family: 'c-bold';
 }
 
 .header-link {
@@ -102,10 +103,22 @@ a:hover{
     font-family:c-bold;
     font-weight: 400;
 }
-@media (max-width:600px){
+@media (max-width:840px){
+    .intro, .header {
+        width:95%;
+        padding-top: 28pt;
+        margin: 0 auto;
+        /* border: solid; */
+    }
     .intro{
-        width:90%;
-        margin:50% auto
+        flex-direction: column;
+    }
+
+    .flex-item {
+        /* border: solid;  */
+        flex-direction: column;
+        margin: 0 0 20pt 0;
+        width: 100%;
     }
 }
 @keyframes go-up{
